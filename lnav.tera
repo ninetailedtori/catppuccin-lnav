@@ -4,14 +4,11 @@ whiskers:
   filename: "catppuccin.json"
   hex_format: "#{{r}}{{g}}{{b}}"
 ---
-
 {
     "$schema": "https://lnav.org/schemas/config-v1.schema.json",
     "ui": {
         "theme-defs": {
-
-            {%- for identifier, flavor in flavors -%}{%- set palette = flavor.colors -%}
-
+            {%- for identifier, flavor in flavors -%}{% set palette = flavor.colors %}
             "catppuccin-{{ identifier }}": {
                 "vars": {
                     "rosewater":                "{{ palette.rosewater.hex }}",
@@ -357,10 +354,7 @@ whiskers:
                         "color":                "$red"
                     }
                 }
-            }{% if not loop.last %},{% endif -%}
-
-        {% endfor -%}
-
+            }{% if not loop.last %},{% endif %}{% endfor %}
         }
     }
 }

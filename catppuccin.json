@@ -1,8 +1,8 @@
-
 {
     "$schema": "https://lnav.org/schemas/config-v1.schema.json",
     "ui": {
-        "theme-defs": {"catppuccin-latte": {
+        "theme-defs": {
+            "catppuccin-latte": {
                 "vars": {
                     "rosewater":                "#dc8a78",
                     "flamingo":                 "#dd7878",
@@ -347,7 +347,8 @@
                         "color":                "$red"
                     }
                 }
-            },"catppuccin-frappe": {
+            },
+            "catppuccin-frappe": {
                 "vars": {
                     "rosewater":                "#f2d5cf",
                     "flamingo":                 "#eebebe",
@@ -692,7 +693,8 @@
                         "color":                "$red"
                     }
                 }
-            },"catppuccin-macchiato": {
+            },
+            "catppuccin-macchiato": {
                 "vars": {
                     "rosewater":                "#f4dbd6",
                     "flamingo":                 "#f0c6c6",
@@ -1037,7 +1039,8 @@
                         "color":                "$red"
                     }
                 }
-            },"catppuccin-mocha": {
+            },
+            "catppuccin-mocha": {
                 "vars": {
                     "rosewater":                "#f5e0dc",
                     "flamingo":                 "#f2cdcd",
@@ -1382,6 +1385,7 @@
                         "color":                "$red"
                     }
                 }
-            }}
+            }
+        }
     }
 }
