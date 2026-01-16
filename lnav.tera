@@ -1,0 +1,369 @@
+---
+whiskers:
+  version: ^2.5.1
+  filename: "catppuccin.json"
+  hex_format: "#{{r}}{{g}}{{b}}"
+---
+
+{
+    "$schema": "https://lnav.org/schemas/config-v1.schema.json",
+    "ui": {
+        "theme-defs": {
+
+{%- for identifier, flavor in flavors -%}
+{%- set palette = flavor.colors -%}
+
+            "catppuccin-{{ identifier }}": {
+                "vars": {
+                    "rosewater":                "{{ palette.rosewater.hex }}",
+                    "flamingo":                 "{{ palette.flamingo.hex }}",
+                    "pink":                     "{{ palette.pink.hex }}",
+                    "mauve":                    "{{ palette.mauve.hex }}",
+                    "red":                      "{{ palette.red.hex }}",
+                    "maroon":                   "{{ palette.maroon.hex }}",
+                    "peach":                    "{{ palette.peach.hex }}",
+                    "yellow":                   "{{ palette.yellow.hex }}",
+                    "green":                    "{{ palette.green.hex }}",
+                    "teal":                     "{{ palette.teal.hex }}",
+                    "sky":                      "{{ palette.sky.hex }}",
+                    "sapphire":                 "{{ palette.sapphire.hex }}",
+                    "blue":                     "{{ palette.blue.hex }}",
+                    "lavender":                 "{{ palette.lavender.hex }}",
+                    "text":                     "{{ palette.text.hex }}",
+                    "subtext1":                 "{{ palette.subtext1.hex }}",
+                    "subtext0":                 "{{ palette.subtext0.hex }}",
+                    "overlay2":                 "{{ palette.overlay2.hex }}",
+                    "overlay1":                 "{{ palette.overlay1.hex }}",
+                    "overlay0":                 "{{ palette.overlay0.hex }}",
+                    "surface2":                 "{{ palette.surface2.hex }}",
+                    "surface1":                 "{{ palette.surface1.hex }}",
+                    "surface0":                 "{{ palette.surface0.hex }}",
+                    "base":                     "{{ palette.base.hex }}",
+                    "mantle":                   "{{ palette.mantle.hex }}",
+                    "crust":                    "{{ palette.crust.hex }}",
+                    "semantic_highlight_color": "semantic()"
+                },
+                "styles": {
+                    "identifier": {
+                        "color":                "semantic()"
+                    },
+                    "text": {
+                        "color":                "$text",
+                        "background-color":     "$base"
+                    },
+                    "selected-text": {
+                        "color":                "$base",
+                        "background-color":     "$overlay0"
+                    },
+                    "fuzzy-match": {
+                        "color":                "$teal",
+                        "underline":            true,
+                        "bold":                 true
+                    },
+                    "alt-text": {
+                        "background-color":     "$subtext0"
+                    },
+                    "error": {
+                        "color":                "$red",
+                        "bold":                 true
+                    },
+                    "ok": {
+                        "color":                "$green",
+                        "bold":                 true
+                    },
+                    "info": {
+                        "color":                "$teal",
+                        "bold":                 true
+                    },
+                    "warning": {
+                        "color":                "$peach",
+                        "bold":                 true
+                    },
+                    "hidden": {
+                        "color":                "$subtext0",
+                        "bold":                 true
+                    },
+                    "cursor-line": {
+                        "background-color":     "$surface2",
+                        "bold":                 true
+                    },
+                    "time-column": {
+                        "background-color":     "$surface0"
+                    },
+                    "disabled-cursor-line": {
+                        "background-color":     "$surface1"
+                    },
+                    "adjusted-time": {
+                        "color":                "$peach"
+                    },
+                    "skewed-time": {
+                        "color":                "$peach",
+                        "bold":                 true
+                    },
+                    "file-offset": {
+                        "color":                "$subtext0"
+                    },
+                    "offset-time": {
+                        "color":                "$peach",
+                        "italic":               true
+                    },
+                    "invalid-msg": {
+                        "color":                "$yellow"
+                    },
+                    "focused": {
+                        "background-color":     "$surface2"
+                    },
+                    "disabled-focused": {
+                        "background-color":     "$surface1"
+                    },
+                    "popup": {
+                        "background-color":     "$mantle"
+                    },
+                    "popup-border": {
+                        "color":                "$mauve"
+                    },
+                    "scrollbar": {
+                        "color":                "$overlay1",
+                    },
+                    "h1": {
+                        "color":                "$red",
+                        "bold":                 true
+                    },
+                    "h2": {
+                        "color":                "$peach",
+                        "underline":            true
+                    },
+                    "h3": {
+                        "color":                "$yellow"
+                    },
+                    "h4": {
+                        "color":                "$green",
+                        "underline":            true
+                    },
+                    "h5": {
+                        "color":                "$sapphire",
+                        "italic":               true
+                    },
+                    "h6": {
+                        "color":                "$lavender",
+                        "italic":               true
+                    },
+                    "hr": {
+                        "color":                "$overlay1"
+                    },
+                    "hyperlink": {
+                        "color":                "$blue",
+                        "underline":            true
+                    },
+                    "list-glyph": {
+                        "color":                "$pink"
+                    },
+                    "breadcrumb": {
+                        "color":                "$overlay1",
+                        "bold":                 true
+                    },
+                    "table-border": {
+                        "color":                "$overlay1"
+                    },
+                    "table-header": {
+                        "bold":                 true
+                    },
+                    "quote-border": {
+                        "color": "$rosewater",
+                    },
+                    "quoted-text": {
+                        "color": "$text",
+                        "background-color": "$mantle"
+                    },
+                    "footnote-border": {
+                        "color": "$lavender",
+                    },
+                    "footnote-text": {
+                        "color": "$subtext0",
+                        "background-color": "$mantle"
+                    },
+                    "snippet-border": {
+                        "color": "$lavender"
+                    },
+                    "indent-guide": {
+                        "color": "$subtext0"
+                    }
+                },
+                "syntax-styles": {
+                    "inline-code": {
+                        "background-color": "$surface0"
+                    },
+                    "quoted-code": {
+                        "background-color": "$mantle"
+                    },
+                    "code-border": {
+                        "color": "$overlay0",
+                    },
+                    "object-key": {
+                        "color": "semantic()"
+                    },
+                    "keyword": {
+                        "color": "$mauve",
+                        "bold": true
+                    },
+                    "string": {
+                        "color": "$green",
+                        "bold": true
+                    },
+                    "comment": {
+                        "color": "$subtext0"
+                    },
+                    "doc-directive": {
+                        "color": "$pink"
+                    },
+                    "variable": {
+                        "color": "$blue"
+                    },
+                    "symbol": {
+                        "color": "$red"
+                    },
+                    "null": {
+                        "color": "$subtext0"
+                    },
+                    "ascii-control": {
+                        "color": "$pink"
+                    },
+                    "non-ascii": {
+                        "color": "$red"
+                    },
+                    "number": {
+                        "color": "$peach"
+                    },
+                    "type": {
+                        "color": "$yellow"
+                    },
+                    "function": {
+                        "color": "$blue"
+                    },
+                    "separators-references-accessors": {
+                        "color": "$sky"
+                    },
+                    "re-special": {
+                        "color": "$pink"
+                    },
+                    "re-repeat": {
+                        "color": "$pink"
+                    },
+                    "diff-delete": {
+                        "color": "$red"
+                    },
+                    "diff-add": {
+                        "color": "$green"
+                    },
+                    "diff-section": {
+                        "color": "$blue"
+                    },
+                    "spectrogram-low": {
+                        "color": "$base",
+                        "background-color": "$green",
+                        "bold": true
+                    },
+                    "spectrogram-medium": {
+                        "color": "$base",
+                        "background-color": "$yellow",
+                        "bold": true
+                    },
+                    "spectrogram-high": {
+                        "color": "$base",
+                        "background-color": "$red",
+                        "bold": true
+                    },
+                    "file": {
+                        "color": "$rosewater"
+                    }
+                },
+                "status-styles": {
+                    "disabled-title": {
+                        "bold": true
+                    },
+                    "title": {
+                        "bold": true
+                    },
+                    "subtitle": {
+                        "color": "$subtext1",
+                        "bold": true
+                    },
+                    "info": {
+                        "color": "$teal",
+                    },
+                    "title-hotkey": {
+                        "color": "$text",
+                        "underline": true
+                    },
+                    "hotkey": {
+                        "color": "$pink",
+                        "underline": true
+                    },
+                    "text": {
+                        "color":                "$text",
+                    },
+                    "warn": {
+                        "color":                "$orange",
+                    },
+                    "alert": {
+                        "color":                "$red",
+                    },
+                    "active": {
+                        "color":                "$text",
+                        "background-color":     "$mantle"
+                    },
+                    "inactive": {
+                        "color":                "$subtext0",
+                        "background-color":     "$mantle"
+                    },
+                    "inactive-alert": {
+                        "color":                "$peach",
+                    },
+                    "suggestion": {
+                        "color": "$teal"
+                    }
+                },
+                "log-level-styles": {
+                    "trace": {
+                        "color":                "$teal"
+                    },
+                    "debug": {
+                        "color":                "$teal"
+                    },
+                    "info": {
+                        "color":                "$teal",
+                    },
+                    "stats": {
+                        "color":                "$teal",
+                    },
+                    "notice": {
+                        "color":                "$teal"
+                    },
+                    "warning": {
+                        "color":                "$peach"
+                    },
+                    "error": {
+                        "color":                "$red"
+                    },
+                    "critical": {
+                        "color":                "$red",
+                        "bold":                 true
+                    },
+                    "fatal": {
+                        "color":                "$red",
+                        "bold":                 true,
+                        "italic":               true
+                    },
+                    "invalid": {
+                        "color":                "$red"
+                    }
+                }
+            }
+
+{% if not loop.last %}
+{% endif -%}
+{% endfor -%}
+
+        }
+    }
+}
