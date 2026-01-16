@@ -122,7 +122,7 @@ whiskers:
                         "color":                "$mauve"
                     },
                     "scrollbar": {
-                        "color":                "$overlay1",
+                        "color":                "$overlay1"
                     },
                     "h1": {
                         "color":                "$red",
@@ -168,14 +168,14 @@ whiskers:
                         "bold":                 true
                     },
                     "quote-border": {
-                        "color": "$rosewater",
+                        "color": "$rosewater"
                     },
                     "quoted-text": {
                         "color": "$text",
                         "background-color": "$mantle"
                     },
                     "footnote-border": {
-                        "color": "$lavender",
+                        "color": "$lavender"
                     },
                     "footnote-text": {
                         "color": "$subtext0",
@@ -196,7 +196,7 @@ whiskers:
                         "background-color": "$mantle"
                     },
                     "code-border": {
-                        "color": "$overlay0",
+                        "color": "$overlay0"
                     },
                     "object-key": {
                         "color": "semantic()"
@@ -288,7 +288,7 @@ whiskers:
                         "bold": true
                     },
                     "info": {
-                        "color": "$teal",
+                        "color": "$teal"
                     },
                     "title-hotkey": {
                         "color": "$text",
@@ -299,13 +299,13 @@ whiskers:
                         "underline": true
                     },
                     "text": {
-                        "color":                "$text",
+                        "color":                "$text"
                     },
                     "warn": {
-                        "color":                "$orange",
+                        "color":                "$orange"
                     },
                     "alert": {
-                        "color":                "$red",
+                        "color":                "$red"
                     },
                     "active": {
                         "color":                "$text",
@@ -316,7 +316,7 @@ whiskers:
                         "background-color":     "$mantle"
                     },
                     "inactive-alert": {
-                        "color":                "$peach",
+                        "color":                "$peach"
                     },
                     "suggestion": {
                         "color": "$teal"
@@ -330,10 +330,10 @@ whiskers:
                         "color":                "$teal"
                     },
                     "info": {
-                        "color":                "$teal",
+                        "color":                "$teal"
                     },
                     "stats": {
-                        "color":                "$teal",
+                        "color":                "$teal"
                     },
                     "notice": {
                         "color":                "$teal"
