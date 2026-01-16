@@ -10,8 +10,7 @@ whiskers:
     "ui": {
         "theme-defs": {
 
-{%- for identifier, flavor in flavors -%}
-{%- set palette = flavor.colors -%}
+            {%- for identifier, flavor in flavors -%}{%- set palette = flavor.colors -%}
 
             "catppuccin-{{ identifier }}": {
                 "vars": {
@@ -358,11 +357,9 @@ whiskers:
                         "color":                "$red"
                     }
                 }
-            }
+            }{% if not loop.last %},{% endif -%}
 
-{% if not loop.last %}
-{% endif -%}
-{% endfor -%}
+        {% endfor -%}
 
         }
     }
